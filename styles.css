@@ -1,9 +1,5 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -12,29 +8,9 @@ body {
 
 header {
     background: #35424a;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-button {
-    background-color: #e8491d;
     color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #c73716;
-}
-
-nav {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    padding: 20px;
+    text-align: center;
 }
 
 nav ul {
@@ -47,37 +23,43 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
 section {
     padding: 20px;
     margin: 20px;
-    background: #ffffff;
+    background: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.projects-list, .passions-list {
-    list-style: none;
-    padding: 0;
-}
-
-.projects-list li, .passions-list li {
-    margin-bottom: 15px;
-}
-
-.profile-img, .project-img, .passion-img {
+.profile-img {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1 1 calc(30% - 20px);
+    margin: 10px;
+    background: #eaeaea;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.passions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
     background: #35424a;
-    color: #ffffff;
+    color: white;
 }
