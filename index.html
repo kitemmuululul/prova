@@ -5,72 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Il Mio Sito Personale</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Ciao, sono [Il Tuo Nome]</h1>
-        <p>Benvenuto nel mio sito! Qui parlerò di me, dei miei progetti e delle mie passioni.</p>
-        <button id="more-info">Scopri di più</button>
+        <h1>Il Tuo Nome</h1>
+        <nav>
+            <ul>
+                <li><a href="#chi-sono">Chi Sono</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+                <li><a href="#passioni">Passioni</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#chi-sono">Chi Sono</a></li>
-            <li><a href="#progetti">Progetti</a></li>
-            <li><a href="#passioni">Passioni</a></li>
-            <li><a href="#contatti">Contatti</a></li>
-        </ul>
-    </nav>
-
+    
     <section id="chi-sono">
         <h2>Chi Sono</h2>
-        <p>Scrivi qui qualcosa su di te. Puoi includere la tua formazione, le tue esperienze e i tuoi obiettivi futuri.</p>
         <img src="tuafoto.jpg" alt="Una tua foto" class="profile-img">
+        <p>Descrizione breve di te e delle tue competenze.</p>
+        <button id="more-info">Scopri di più</button>
     </section>
 
     <section id="progetti">
         <h2>I Miei Progetti</h2>
-        <ul class="projects-list">
-            <li>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="progetto1.jpg" alt="Progetto 1">
                 <h3>Progetto 1</h3>
                 <p>Descrizione del progetto 1.</p>
-                <img src="progetto1.jpg" alt="Screenshot del progetto 1" class="project-img">
-            </li>
-            <li>
+            </div>
+            <div class="project">
+                <img src="progetto2.jpg" alt="Progetto 2">
                 <h3>Progetto 2</h3>
                 <p>Descrizione del progetto 2.</p>
-                <img src="progetto2.jpg" alt="Screenshot del progetto 2" class="project-img">
-            </li>
-            <li>
+            </div>
+            <div class="project">
+                <img src="progetto3.jpg" alt="Progetto 3">
                 <h3>Progetto 3</h3>
                 <p>Descrizione del progetto 3.</p>
-                <img src="progetto3.jpg" alt="Screenshot del progetto 3" class="project-img">
-            </li>
-        </ul>
+            </div>
+        </div>
     </section>
 
     <section id="passioni">
         <h2>Le Mie Passioni</h2>
-        <p>Parla delle tue passioni e hobby. Puoi usare elenchi per rendere il contenuto più leggibile.</p>
         <ul class="passions-list">
-            <li>Passione 1</li>
-            <li>Passione 2</li>
-            <li>Passione 3</li>
-            <li>Passione 4</li>
+            <li>🖥️ Programmazione</li>
+            <li>🎨 Design</li>
+            <li>📚 Lettura</li>
+            <li>🎵 Musica</li>
         </ul>
-        <img src="passione.jpg" alt="Una tua passione" class="passion-img">
     </section>
 
     <section id="contatti">
         <h2>Contatti</h2>
-        <p>Contattami: <a href="mailto:tuo-email@example.com">tuo-email@example.com</a></p>
-        <button id="email-button">Invia Email</button>
+        <p>Email: <a href="mailto:tuo-email@example.com">tuo-email@example.com</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+        <p>&copy; 2024 Il Tuo Nome. Tutti i diritti riservati.</p>
     </footer>
 </body>
 </html>
